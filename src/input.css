@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply overflow-x-hidden;
+}
+
+.custom-container {
+  @apply px-10;
+}
+
+.section-heading {
+  @apply font-semibold text-2xl text-gray;
+}
+
+.section-padding {
+  @apply py-8;
+}
+
+.section-margin {
+  @apply my-8;
+}
+
+/* slick slider */
+.slick-slide {
+  @apply mx-2;
+}
+
+.progress-bar-container {
+  @apply relative w-full h-1.5 bg-[#CDCDCD];
+}
+
+.progress-bar {
+  @apply absolute top-0 left-0 h-full bg-primary transition-all;
+}
+
+/*News*/
+.news-card-big {
+  @apply h-full bg-secondary rounded-xl;
+}
+
+.news-card-big .big-img {
+  /* @apply h-[505px]; */
+}
+
+.news-big-heading {
+  @apply mb-3 text-2xl font-semibold text-white;
+}
+
+.news-tag {
+  @apply text-xl text-white;
+}
+
+.news-card-small {
+  @apply bg-secondary rounded-xl flex justify-between gap-3 px-4 py-3;
+}
+
+.news-card-small .small-img {
+  @apply w-[193px] h-[128px] shrink-0;
+}
+
+.news-small-heading {
+  @apply mb-5 text-xl font-medium text-primary;
+}
+
+.news-tag {
+  @apply text-base text-white;
+}
+
+
+/*border-btn-block*/
+.border-btn-block {
+    @apply flex gap-6
+}
+
+.border-btn {
+    @apply inline-block py-2 px-4 min-w-[120px] border border-secondary rounded-[20px] text-center font-semibold text-[#4B5768]
+}

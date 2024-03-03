@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick Slider CDN -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="bg-secondary">
+      <div class="custom-container">
+        <nav class="py-4 flex justify-between items-center gap-3">
+          <ul>
+            <li>
+              <a href="/">
+                <img src="./src/images/header/logo.png" alt="" />
+              </a>
+            </li>
+          </ul>
+
+          <ul class="flex items-center gap-16">
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="/"
+                >Tips & Predictions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="/"
+                >Cricket</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="/"
+                >Football</a
+              >
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-2.5 py-3 px-6 rounded-[20px] bg-primary"
+              >
+                <span class="font-semibold">Sign in</span>
+                <img src="./src/images/header/user.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <!-- Slider section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="mb-5 flex justify-between items-center">
+            <h1 class="section-heading">Latest Score</h1>
+            <select
+              name="games"
+              id="games"
+              class="py-3 px-6 rounded-lg border border-[#D8DCE3] font-semibold outline-none"
+            >
+              <option value="cricket">Cricket</option>
+              <option value="football">Football</option>
+              <option value="kabaddi">Kabaddi</option>
+            </select>
+          </div>
+          <div class="banner-slider">
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+
+            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                    Zimbabwe Tour of Sri Lanka, 2024
+                  </h4>
+                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                </div>
+                <div
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                >
+                  <i class="fa-regular fa-circle-dot"></i>
+                  <span>Live</span>
+                </div>
+              </div>
+
+              <div class="my-5 flex justify-between items-start gap-4">
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/srilanka-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+
+                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+
+                <div class="shrink-0 flex items-center gap-3">
+                  <img
+                    src="./src/images/global/zim-flag.png"
+                    alt="Srilanka flag"
+                  />
+                  <div>
+                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+                Sri Lanka need 40 runs in 50 balls at 4.8 rpo
+              </p>
+            </div>
+          </div>
+         
+          <div class="progress-bar-container mt-4">
+            <div class="progress-bar" style="width: 0"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advertisement -->
+      <section>
+        <div class="custom-container">
+          <div
+            class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
+          >
+            <h4 class="text-primary text-xl font-semibold">Advertisement</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- News section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="flex gap-10">
+            <div class="w-[75%] flex gap-7">
+              <div class="w-[55%]">
+                <div class="news-card-big">
+                  <div class="big-img">
+                    <img
+                      src="./src/images/home/news-banner.jpg"
+                      alt="poster"
+                      class="h-full w-full rounded-t-xl"
+                    />
+                  </div>
+                  <div class="px-3 py-4">
+                    <h4 class="news-big-heading">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                      headline list
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <img
+                        src="./src/images/global/share.png"
+                        alt="share icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="w-[45%] space-y-4">
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="./src/images/home/news-banner.jpg"
+                      alt="poster"
+                      class="h-full w-full rounded-xl"
+                    />
+                  </div>
+                  <div class="px-3 py-4">
+                    <h4 class="news-small-heading">
+                      Live streaming, SA20 2024 begins on January 10: Where to
+                      watch
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <img
+                        src="./src/images/global/share.png"
+                        alt="share icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="./src/images/home/news-banner.jpg"
+                      alt="poster"
+                      class="h-full w-full rounded-xl"
+                    />
+                  </div>
+                  <div class="px-3 py-4">
+                    <h4 class="news-small-heading">
+                      Live streaming, SA20 2024 begins on January 10: Where to
+                      watch
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <img
+                        src="./src/images/global/share.png"
+                        alt="share icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="./src/images/home/news-banner.jpg"
+                      alt="poster"
+                      class="h-full w-full rounded-xl"
+                    />
+                  </div>
+                  <div class="px-3 py-4">
+                    <h4 class="news-small-heading">
+                      Live streaming, SA20 2024 begins on January 10: Where to
+                      watch
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <img
+                        src="./src/images/global/share.png"
+                        alt="share icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="news-card-small">
+                  <div class="small-img">
+                    <img
+                      src="./src/images/home/news-banner.jpg"
+                      alt="poster"
+                      class="h-full w-full rounded-xl"
+                    />
+                  </div>
+                  <div class="px-3 py-4">
+                    <h4 class="news-small-heading">
+                      Live streaming, SA20 2024 begins on January 10: Where to
+                      watch
+                    </h4>
+                    <div class="flex justify-between items-center">
+                      <p class="news-tag">News</p>
+                      <img
+                        src="./src/images/global/share.png"
+                        alt="share icon"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[25%] p-14">
+              <div
+                class="h-full bg-secondary rounded-xl grid place-content-center text-center"
+              >
+                <h4 class="text-primary text-4xl font-semibold">Ads</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cricket section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="mb-5 flex justify-between items-center">
+            <h1 class="section-heading">Cricket</h1>
+            <ul class="border-btn-block">
+              <li>
+                <a class="border-btn" href="">More</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">News</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">Features</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">Opinions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex gap-7">
+            <div class="w-[33%]">
+              <div class="news-card-big">
+                <div class="big-img">
+                  <img
+                    src="./src/images/home/cricket.png"
+                    alt="poster"
+                    class="h-full w-full rounded-t-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <h4 class="news-big-heading !text-xl">
+                    Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                    headline list
+                  </h4>
+                  <div class="flex justify-between items-center">
+                    <p class="news-tag">News</p>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[66%] space-y-4">
+              <div class="flex gap-6">
+                <div class="space-y-4">
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="grid grid-cols-2 gap-x-6">
+                <li class="py-3 border-t border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-3 border-t border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-3 border-y border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-3 border-y border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Advertisement -->
+      <section>
+        <div class="custom-container">
+          <div
+            class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
+          >
+            <h4 class="text-primary text-xl font-semibold">Advertisement</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Football section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="mb-5 flex justify-between items-center">
+            <h1 class="section-heading">Football</h1>
+            <ul class="border-btn-block">
+              <li>
+                <a class="border-btn" href="">More</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">News</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">Features</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">Opinions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex gap-7">
+            <div class="w-[33%]">
+              <div class="news-card-big">
+                <div class="big-img">
+                  <img
+                    src="./src/images/home/football.png"
+                    alt="poster"
+                    class="h-full w-full rounded-t-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <h4 class="news-big-heading !text-xl">
+                    Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                    headline list
+                  </h4>
+                  <div class="flex justify-between items-center">
+                    <p class="news-tag">News</p>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[66%] space-y-4">
+              <div class="flex gap-6">
+                <div class="space-y-4">
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news-card-small">
+                    <div class="small-img">
+                      <img
+                        src="./src/images/home/news-banner.jpg"
+                        alt="poster"
+                        class="h-full w-full rounded-xl"
+                      />
+                    </div>
+                    <div class="px-3 py-4">
+                      <h4 class="news-small-heading">
+                        Live streaming, SA20 2024 begins on January 10: Where to
+                        watch
+                      </h4>
+                      <div class="flex justify-between items-center">
+                        <p class="news-tag">News</p>
+                        <img
+                          src="./src/images/global/share.png"
+                          alt="share icon"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="grid grid-cols-2 gap-x-6">
+                <li class="py-3 border-t border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-3 border-t border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-3 border-y border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+                <li class="py-3 border-y border-[#D8DCE3]">
+                  <a href="" class="flex items-center gap-2">
+                    <img src="./src/images/global/news.png" alt="news icon" />
+                    <h5 class="text-danger">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                      headline list
+                    </h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Premier League section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <h1 class="mb-5 section-heading">Premier League</h1>
+
+          <div class="flex gap-7">
+            <div class="w-[66%]">
+              <div class="news-card-big">
+                <div class="big-img">
+                  <img
+                    src="./src/images/home/premier-league.png"
+                    alt="poster"
+                    class="h-full w-full rounded-t-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <div class="flex justify-between items-center">
+                    <h4 class="news-big-heading">
+                      Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                      headline list
+                    </h4>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-[33%] space-y-9">
+              <div class="news-card-small">
+                <div class="small-img">
+                  <img
+                    src="./src/images/home/news-banner.jpg"
+                    alt="poster"
+                    class="h-full w-full rounded-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <h4 class="news-small-heading">
+                    Live streaming, SA20 2024 begins on January 10: Where to
+                    watch
+                  </h4>
+                  <div class="flex justify-between items-center">
+                    <p class="news-tag">News</p>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-card-small">
+                <div class="small-img">
+                  <img
+                    src="./src/images/home/news-banner.jpg"
+                    alt="poster"
+                    class="h-full w-full rounded-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <h4 class="news-small-heading">
+                    Live streaming, SA20 2024 begins on January 10: Where to
+                    watch
+                  </h4>
+                  <div class="flex justify-between items-center">
+                    <p class="news-tag">News</p>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-card-small">
+                <div class="small-img">
+                  <img
+                    src="./src/images/home/news-banner.jpg"
+                    alt="poster"
+                    class="h-full w-full rounded-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <h4 class="news-small-heading">
+                    Live streaming, SA20 2024 begins on January 10: Where to
+                    watch
+                  </h4>
+                  <div class="flex justify-between items-center">
+                    <p class="news-tag">News</p>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="news-card-small">
+                <div class="small-img">
+                  <img
+                    src="./src/images/home/news-banner.jpg"
+                    alt="poster"
+                    class="h-full w-full rounded-xl"
+                  />
+                </div>
+                <div class="px-3 py-4">
+                  <h4 class="news-small-heading">
+                    Live streaming, SA20 2024 begins on January 10: Where to
+                    watch
+                  </h4>
+                  <div class="flex justify-between items-center">
+                    <p class="news-tag">News</p>
+                    <img src="./src/images/global/share.png" alt="share icon" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="mt-8 grid grid-cols-3 gap-10">
+            <li>
+              <a href="" class="flex items-center gap-2">
+                <img src="./src/images/global/news.png" alt="news icon" />
+                <h5 class="text-danger">
+                  Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                  headline list
+                </h5>
+              </a>
+            </li>
+            <li>
+              <a href="" class="flex items-center gap-2">
+                <img src="./src/images/global/news.png" alt="news icon" />
+                <h5 class="text-danger">
+                  Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                  headline list
+                </h5>
+              </a>
+            </li>
+            <li>
+              <a href="" class="flex items-center gap-2">
+                <img src="./src/images/global/news.png" alt="news icon" />
+                <h5 class="text-danger">
+                  Fastest century in Ranji Trophy: Rishabh Pant, Riyan Rarag
+                  headline list
+                </h5>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Advertisement -->
+      <section>
+        <div class="custom-container">
+          <div
+            class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
+          >
+            <h4 class="text-primary text-xl font-semibold">Advertisement</h4>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kabaddi section -->
+      <section class="section-padding">
+        <div class="custom-container">
+          <div class="mb-5 flex justify-between items-center">
+            <h1 class="section-heading">Kabaddi</h1>
+            <ul class="border-btn-block">
+              <li>
+                <a class="border-btn" href="">More</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">News</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">Features</a>
+              </li>
+              <li>
+                <a class="border-btn" href="">Opinions</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-3 gap-6">
+            <div class="news-card-big">
+              <div class="big-img">
+                <img
+                  src="./src/images/home/kabaddi.png"
+                  alt="poster"
+                  class="h-full w-full rounded-t-xl"
+                />
+              </div>
+              <div class="px-3 py-4">
+                <h4 class="news-big-heading !text-xl">
+                  Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                  headline list
+                </h4>
+                <div class="flex justify-between items-center">
+                  <p class="news-tag">News</p>
+                  <img src="./src/images/global/share.png" alt="share icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card-big">
+              <div class="big-img">
+                <img
+                  src="./src/images/home/kabaddi.png"
+                  alt="poster"
+                  class="h-full w-full rounded-t-xl"
+                />
+              </div>
+              <div class="px-3 py-4">
+                <h4 class="news-big-heading !text-xl">
+                  Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                  headline list
+                </h4>
+                <div class="flex justify-between items-center">
+                  <p class="news-tag">News</p>
+                  <img src="./src/images/global/share.png" alt="share icon" />
+                </div>
+              </div>
+            </div>
+
+            <div class="news-card-big">
+              <div class="big-img">
+                <img
+                  src="./src/images/home/kabaddi.png"
+                  alt="poster"
+                  class="h-full w-full rounded-t-xl"
+                />
+              </div>
+              <div class="px-3 py-4">
+                <h4 class="news-big-heading !text-xl">
+                  Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
+                  headline list
+                </h4>
+                <div class="flex justify-between items-center">
+                  <p class="news-tag">News</p>
+                  <img src="./src/images/global/share.png" alt="share icon" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary">
+      <div class="custom-container">
+        <div class="py-4 flex justify-between items-center">
+          <div
+            class="text-white divide-x-4 divide-white flex items-center space-x-5"
+          >
+            <p>©2024 SportsRani all right Reserved</p>
+            <p class="pl-5">
+              <a href="">Terms & Condition</a>
+            </p>
+          </div>
+
+          <div class="text-white flex items-center gap-6">
+            <p>Follow us</p>
+            <ul class="flex items-center gap-5">
+              <li>
+                <a href="">
+                  <img src="./src/images/global/facebook.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./src/images/global/youTube.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./src/images/global/x.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./src/images/global/instagram.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./src/slider.js"></script>
+  </body>
+</html>
