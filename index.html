@@ -38,7 +38,11 @@
           <ul>
             <li>
               <a href="/">
-                <img src="./src/images/header/logo.png" alt="" />
+                <img
+                  src="./src/images/header/logo.png"
+                  alt="sports rani logo"
+                  class="w-[168px] lg:w-auto"
+                />
               </a>
             </li>
           </ul>
@@ -78,14 +82,40 @@
             <li>
               <a
                 href="#"
-                class="flex items-center gap-2.5 py-3 px-6 rounded-[20px] bg-primary"
+                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
               >
-                <span class="font-semibold">Sign in</span>
-                <img src="./src/images/header/user.png" alt="" />
+                <span class="font-semibold text-[15px] lg:text-base"
+                  >Sign in</span
+                >
+                <img
+                  src="./src/images/header/user.png"
+                  alt="user icon"
+                  class="w-5 lg:w-auto"
+                />
               </a>
             </li>
           </ul>
         </nav>
+      </div>
+
+      <!-- Only mobile device section -->
+      <div class="lg:hidden bg-[#2C2C2C] py-4">
+        <div class="custom-container">
+          <div class="flex items-center gap-7">
+            <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
+              <img src="./src/images/global/trending-up.png" alt="trending icon">
+            </div>
+            <ul class="flex items-center gap-6">
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <span class="text-xs text-white">All Cricket Scores</span>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <span class="text-xs text-white">All Football Scores</span>
+              </li>
+            </ul>
+        </div>
       </div>
     </header>
 
@@ -99,7 +129,7 @@
             <select
               name="games"
               id="games"
-              class="py-3 px-6 rounded-lg border border-[#D8DCE3] font-semibold outline-none"
+              class="py-3 px-6 rounded-lg border border-[#D8DCE3] text-xs lg:text-base font-semibold outline-none"
             >
               <option value="cricket">Cricket</option>
               <option value="football">Football</option>
@@ -107,344 +137,365 @@
             </select>
           </div>
           <div class="banner-slider">
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
 
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
 
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
 
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
 
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
 
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
 
-            <div class="min-w-[394px] py-5 px-6 bg-secondary rounded-xl">
+            <!-- slider item -->
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
               <div class="flex justify-between items-start gap-2">
                 <div>
-                  <h4 class="text-[15px] leading-[18px] font-bold text-white">
+                  <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
                     Zimbabwe Tour of Sri Lanka, 2024
                   </h4>
-                  <p class="mt-1.5 text-sm text-white">2nd ODi | 08 Jan 2024</p>
+                  <p class="lg:mt-1.5 text-[10px] lg:text-sm text-white">2nd ODi | 08 Jan 2024</p>
                 </div>
                 <div
-                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-sm text-primary flex gap-1.5 items-center"
+                  class="shrink-0 rounded py-1 px-1.5 bg-primary/25 text-xs lg:text-sm text-primary flex gap-1.5 items-center"
                 >
                   <i class="fa-regular fa-circle-dot"></i>
                   <span>Live</span>
                 </div>
               </div>
 
-              <div class="my-5 flex justify-between items-start gap-4">
+              <div class="my-5 flex justify-between items-start gap-2 lg:gap-4">
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/srilanka-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
 
-                <div class="shrink-0 text-primary text-2xl font-medium">VS</div>
+                <div class="shrink-0 text-primary text-xs lg:text-2xl font-medium">VS</div>
 
                 <div class="shrink-0 flex items-center gap-3">
                   <img
                     src="./src/images/global/zim-flag.png"
                     alt="Srilanka flag"
+                    class="w-7 lg:w-auto"
                   />
                   <div>
-                    <h6 class="text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
-                    <p class="mt-.5 text-white font-semibold">169/7 (41.4)</p>
+                    <h6 class="text-[10px] lg:text-sm text-[#F1F5F9] uppercase">SRI LANKA</h6>
+                    <p class="mt-.5 text-xs lg:text-base text-white font-semibold">169/7 (41.4)</p>
                   </div>
                 </div>
               </div>
 
-              <p class="text-[15px] leading-[18px] text-primary font-semibold">
+              <p class="text-[11px] lg:text-[15px] leading-[18px] text-primary font-semibold">
                 Sri Lanka need 40 runs in 50 balls at 4.8 rpo
               </p>
             </div>
           </div>
-         
-          <div class="progress-bar-container mt-4">
+
+          <div class="progress-bar-container mt-4 hidden lg:block">
             <div class="progress-bar" style="width: 0"></div>
           </div>
         </div>
       </section>
 
       <!-- Advertisement -->
-      <section>
+      <section class="px-7 lg:px-0">
         <div class="custom-container">
           <div
             class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
@@ -458,10 +509,10 @@
       <section class="section-padding">
         <div class="custom-container">
           <div class="flex flex-col lg:flex-row gap-10">
-            <div class="lg:w-[75%] flex flex-col lg:flex-row gap-7">
+            <div class="lg:w-[75%] flex flex-col lg:flex-row gap-5 lg:gap-7">
               <div class="lg:w-[55%]">
                 <div class="news-card-big">
-                  <div class="big-img">
+                  <div class="big-img mobile-big-img">
                     <img
                       src="./src/images/home/news-banner.jpg"
                       alt="poster"
@@ -469,7 +520,7 @@
                     />
                   </div>
                   <div class="px-3 py-4">
-                    <h4 class="news-big-heading">
+                    <h4 class="mb-3 text-lg lg:text-2xl font-semibold text-white">
                       Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
                       headline list
                     </h4>
@@ -490,7 +541,6 @@
                     <img
                       src="./src/images/home/news-banner.jpg"
                       alt="poster"
-                      class="h-full w-full rounded-xl"
                     />
                   </div>
                   <div class="px-3 py-4">
@@ -513,7 +563,6 @@
                     <img
                       src="./src/images/home/news-banner.jpg"
                       alt="poster"
-                      class="h-full w-full rounded-xl"
                     />
                   </div>
                   <div class="px-3 py-4">
@@ -536,7 +585,6 @@
                     <img
                       src="./src/images/home/news-banner.jpg"
                       alt="poster"
-                      class="h-full w-full rounded-xl"
                     />
                   </div>
                   <div class="px-3 py-4">
@@ -559,7 +607,6 @@
                     <img
                       src="./src/images/home/news-banner.jpg"
                       alt="poster"
-                      class="h-full w-full rounded-xl"
                     />
                   </div>
                   <div class="px-3 py-4">
@@ -579,11 +626,11 @@
               </div>
             </div>
 
-            <div class="lg:w-[25%] p-14">
+            <div class="lg:w-[25%] h-[240px] lg:h-auto px-7 lg:p-14">
               <div
                 class="h-full bg-secondary rounded-xl grid place-content-center text-center"
               >
-                <h4 class="text-primary text-4xl font-semibold">Ads</h4>
+                <h4 class="text-primary text-xl lg:text-4xl font-semibold">Ads</h4>
               </div>
             </div>
           </div>
@@ -591,7 +638,7 @@
       </section>
 
       <!-- Cricket section -->
-      <section class="section-padding">
+      <section>
         <div class="custom-container">
           <div class="mb-5 flex justify-between items-center">
             <h1 class="section-heading">Cricket</h1>
@@ -611,10 +658,10 @@
             </ul>
           </div>
 
-          <div class="flex flex-col lg:flex-row gap-7">
+          <div class="flex flex-col lg:flex-row gap-5 lg:gap-7">
             <div class="lg:w-[33%]">
               <div class="news-card-big">
-                <div class="big-img">
+                <div class="big-img mobile-big-img">
                   <img
                     src="./src/images/home/cricket.png"
                     alt="poster"
@@ -622,7 +669,7 @@
                   />
                 </div>
                 <div class="px-3 py-4">
-                  <h4 class="news-big-heading !text-xl">
+                  <h4 class="news-big-heading">
                     Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
                     headline list
                   </h4>
@@ -642,7 +689,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -665,7 +711,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -688,7 +733,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -713,7 +757,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -736,7 +779,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -759,7 +801,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -779,7 +820,7 @@
                 </div>
               </div>
 
-              <ul class="grid grid-cols-2 gap-x-6">
+              <ul class="grid lg:grid-cols-2 gap-x-6">
                 <li class="py-3 border-t border-[#D8DCE3]">
                   <a href="" class="flex items-center gap-2">
                     <img src="./src/images/global/news.png" alt="news icon" />
@@ -823,7 +864,7 @@
       </section>
 
       <!-- Advertisement -->
-      <section>
+      <section class="section-padding px-7 lg:px-0">
         <div class="custom-container">
           <div
             class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
@@ -834,10 +875,10 @@
       </section>
 
       <!-- Football section -->
-      <section class="section-padding">
+      <section>
         <div class="custom-container">
           <div class="mb-5 flex justify-between items-center">
-            <h1 class="section-heading">Cricket</h1>
+            <h1 class="section-heading">Football</h1>
             <ul class="border-btn-block">
               <li>
                 <a class="border-btn" href="">More</a>
@@ -854,18 +895,18 @@
             </ul>
           </div>
 
-          <div class="flex flex-col lg:flex-row gap-7">
+          <div class="flex flex-col lg:flex-row gap-5 lg:gap-7">
             <div class="lg:w-[33%]">
               <div class="news-card-big">
-                <div class="big-img">
+                <div class="big-img mobile-big-img">
                   <img
-                    src="./src/images/home/cricket.png"
+                    src="./src/images/home/football.png"
                     alt="poster"
                     class="h-full w-full rounded-t-xl"
                   />
                 </div>
                 <div class="px-3 py-4">
-                  <h4 class="news-big-heading !text-xl">
+                  <h4 class="news-big-heading">
                     Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
                     headline list
                   </h4>
@@ -885,7 +926,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -908,7 +948,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -931,7 +970,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -956,7 +994,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -979,7 +1016,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -1002,7 +1038,6 @@
                       <img
                         src="./src/images/home/news-banner.jpg"
                         alt="poster"
-                        class="h-full w-full rounded-xl"
                       />
                     </div>
                     <div class="px-3 py-4">
@@ -1022,7 +1057,7 @@
                 </div>
               </div>
 
-              <ul class="grid grid-cols-2 gap-x-6">
+              <ul class="grid lg:grid-cols-2 gap-x-6">
                 <li class="py-3 border-t border-[#D8DCE3]">
                   <a href="" class="flex items-center gap-2">
                     <img src="./src/images/global/news.png" alt="news icon" />
@@ -1070,10 +1105,10 @@
         <div class="custom-container">
           <h1 class="mb-5 section-heading">Premier League</h1>
 
-          <div class="flex flex-col lg:flex-row gap-7">
+          <div class="flex flex-col lg:flex-row gap-5 lg:gap-7">
             <div class="lg:w-[66%]">
               <div class="news-card-big">
-                <div class="big-img">
+                <div class="big-img mobile-big-img">
                   <img
                     src="./src/images/home/premier-league.png"
                     alt="poster"
@@ -1092,13 +1127,12 @@
               </div>
             </div>
 
-            <div class="lg:w-[33%] space-y-9">
+            <div class="lg:w-[33%] space-y-4 lg:space-y-9">
               <div class="news-card-small">
                 <div class="small-img">
                   <img
                     src="./src/images/home/news-banner.jpg"
                     alt="poster"
-                    class="h-full w-full rounded-xl"
                   />
                 </div>
                 <div class="px-3 py-4">
@@ -1118,7 +1152,6 @@
                   <img
                     src="./src/images/home/news-banner.jpg"
                     alt="poster"
-                    class="h-full w-full rounded-xl"
                   />
                 </div>
                 <div class="px-3 py-4">
@@ -1138,7 +1171,6 @@
                   <img
                     src="./src/images/home/news-banner.jpg"
                     alt="poster"
-                    class="h-full w-full rounded-xl"
                   />
                 </div>
                 <div class="px-3 py-4">
@@ -1158,7 +1190,6 @@
                   <img
                     src="./src/images/home/news-banner.jpg"
                     alt="poster"
-                    class="h-full w-full rounded-xl"
                   />
                 </div>
                 <div class="px-3 py-4">
@@ -1175,8 +1206,8 @@
             </div>
           </div>
 
-          <ul class="mt-8 grid lg:grid-cols-3 gap-10">
-            <li>
+          <ul class="mt-8 grid lg:grid-cols-3 gap-0 lg:gap-10">
+            <li class="py-3 lg:py-0 border-t border-[#D8DCE3] lg:border-t-0">
               <a href="" class="flex items-center gap-2">
                 <img src="./src/images/global/news.png" alt="news icon" />
                 <h5 class="text-danger">
@@ -1185,7 +1216,7 @@
                 </h5>
               </a>
             </li>
-            <li>
+            <li class="py-3 lg:py-0 border-t border-[#D8DCE3] lg:border-t-0">
               <a href="" class="flex items-center gap-2">
                 <img src="./src/images/global/news.png" alt="news icon" />
                 <h5 class="text-danger">
@@ -1194,7 +1225,7 @@
                 </h5>
               </a>
             </li>
-            <li>
+            <li class="py-3 lg:py-0 border-t border-[#D8DCE3] lg:border-t-0">
               <a href="" class="flex items-center gap-2">
                 <img src="./src/images/global/news.png" alt="news icon" />
                 <h5 class="text-danger">
@@ -1208,7 +1239,7 @@
       </section>
 
       <!-- Advertisement -->
-      <section>
+      <section class="px-7 lg:px-0">
         <div class="custom-container">
           <div
             class="bg-secondary rounded-xl h-[90px] grid place-content-center text-center"
@@ -1239,9 +1270,9 @@
             </ul>
           </div>
 
-          <div class="grid lg:grid-cols-3 gap-6">
+          <div class="grid lg:grid-cols-3 gap-4 lg:gap-6">
             <div class="news-card-big">
-              <div class="big-img">
+              <div class="big-img mobile-big-img">
                 <img
                   src="./src/images/home/kabaddi.png"
                   alt="poster"
@@ -1249,7 +1280,7 @@
                 />
               </div>
               <div class="px-3 py-4">
-                <h4 class="news-big-heading !text-xl">
+                <h4 class="news-big-heading">
                   Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
                   headline list
                 </h4>
@@ -1269,7 +1300,7 @@
                 />
               </div>
               <div class="px-3 py-4">
-                <h4 class="news-big-heading !text-xl">
+                <h4 class="news-big-heading">
                   Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
                   headline list
                 </h4>
@@ -1289,7 +1320,7 @@
                 />
               </div>
               <div class="px-3 py-4">
-                <h4 class="news-big-heading !text-xl">
+                <h4 class="news-big-heading">
                   Fastest century in Ranji Trophy: Rishabh Pant, Riyan Parag
                   headline list
                 </h4>
@@ -1311,7 +1342,9 @@
           <div
             class="text-white lg:divide-x-4 lg:divide-white lg:flex lg:items-center lg:space-x-5"
           >
-            <p class="text-center text-sm lg:text-base">©2024 SportsRani all right Reserved</p>
+            <p class="text-center text-sm lg:text-base">
+              ©2024 SportsRani all right Reserved
+            </p>
             <p class="hidden lg:block pl-5">
               <a href="">Terms & Condition</a>
             </p>
