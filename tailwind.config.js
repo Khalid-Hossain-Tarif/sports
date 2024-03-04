@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}", "./index.html"],
+  content: ["./src/**/*.{html,js}", "./*.html", "./index.html"],
   theme: {
     extend: {
       fontFamily: {
@@ -10,7 +10,7 @@ module.exports = {
         primary: "#F8FF29",
         secondary: "#393536",
         gray: "#494549",
-        // textGray: "#707070",
+        textGray: "#444D56",
         // grayLight: "#ECEDEC",
         // dark: "#03030A",
 
@@ -21,7 +21,7 @@ module.exports = {
         // review: "#F9AC00",
 
         // heading: "#222836",
-        // body: "#25262b",
+        // body: "#444D56",
 
         // borderLight: "#e5e5e5",
         // borderDark: "#2B364A",
