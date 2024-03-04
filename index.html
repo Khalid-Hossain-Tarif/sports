@@ -43,7 +43,7 @@
             </li>
           </ul>
 
-          <ul class="flex items-center gap-16">
+          <ul class="hidden lg:flex items-center gap-16">
             <li>
               <a
                 class="text-white hover:text-primary text-lg font-semibold"
@@ -457,9 +457,9 @@
       <!-- News section -->
       <section class="section-padding">
         <div class="custom-container">
-          <div class="flex gap-10">
-            <div class="w-[75%] flex gap-7">
-              <div class="w-[55%]">
+          <div class="flex flex-col lg:flex-row gap-10">
+            <div class="lg:w-[75%] flex flex-col lg:flex-row gap-7">
+              <div class="lg:w-[55%]">
                 <div class="news-card-big">
                   <div class="big-img">
                     <img
@@ -484,7 +484,7 @@
                 </div>
               </div>
 
-              <div class="w-[45%] space-y-4">
+              <div class="lg:w-[45%] space-y-4">
                 <div class="news-card-small">
                   <div class="small-img">
                     <img
@@ -579,7 +579,7 @@
               </div>
             </div>
 
-            <div class="w-[25%] p-14">
+            <div class="lg:w-[25%] p-14">
               <div
                 class="h-full bg-secondary rounded-xl grid place-content-center text-center"
               >
@@ -611,8 +611,8 @@
             </ul>
           </div>
 
-          <div class="flex gap-7">
-            <div class="w-[33%]">
+          <div class="flex flex-col lg:flex-row gap-7">
+            <div class="lg:w-[33%]">
               <div class="news-card-big">
                 <div class="big-img">
                   <img
@@ -634,8 +634,8 @@
               </div>
             </div>
 
-            <div class="w-[66%] space-y-4">
-              <div class="flex gap-6">
+            <div class="lg:w-[66%] space-y-4">
+              <div class="flex flex-col lg:flex-row gap-6">
                 <div class="space-y-4">
                   <div class="news-card-small">
                     <div class="small-img">
@@ -837,7 +837,7 @@
       <section class="section-padding">
         <div class="custom-container">
           <div class="mb-5 flex justify-between items-center">
-            <h1 class="section-heading">Football</h1>
+            <h1 class="section-heading">Cricket</h1>
             <ul class="border-btn-block">
               <li>
                 <a class="border-btn" href="">More</a>
@@ -854,12 +854,12 @@
             </ul>
           </div>
 
-          <div class="flex gap-7">
-            <div class="w-[33%]">
+          <div class="flex flex-col lg:flex-row gap-7">
+            <div class="lg:w-[33%]">
               <div class="news-card-big">
                 <div class="big-img">
                   <img
-                    src="./src/images/home/football.png"
+                    src="./src/images/home/cricket.png"
                     alt="poster"
                     class="h-full w-full rounded-t-xl"
                   />
@@ -877,8 +877,8 @@
               </div>
             </div>
 
-            <div class="w-[66%] space-y-4">
-              <div class="flex gap-6">
+            <div class="lg:w-[66%] space-y-4">
+              <div class="flex flex-col lg:flex-row gap-6">
                 <div class="space-y-4">
                   <div class="news-card-small">
                     <div class="small-img">
@@ -1070,8 +1070,8 @@
         <div class="custom-container">
           <h1 class="mb-5 section-heading">Premier League</h1>
 
-          <div class="flex gap-7">
-            <div class="w-[66%]">
+          <div class="flex flex-col lg:flex-row gap-7">
+            <div class="lg:w-[66%]">
               <div class="news-card-big">
                 <div class="big-img">
                   <img
@@ -1092,7 +1092,7 @@
               </div>
             </div>
 
-            <div class="w-[33%] space-y-9">
+            <div class="lg:w-[33%] space-y-9">
               <div class="news-card-small">
                 <div class="small-img">
                   <img
@@ -1175,7 +1175,7 @@
             </div>
           </div>
 
-          <ul class="mt-8 grid grid-cols-3 gap-10">
+          <ul class="mt-8 grid lg:grid-cols-3 gap-10">
             <li>
               <a href="" class="flex items-center gap-2">
                 <img src="./src/images/global/news.png" alt="news icon" />
@@ -1239,7 +1239,7 @@
             </ul>
           </div>
 
-          <div class="grid grid-cols-3 gap-6">
+          <div class="grid lg:grid-cols-3 gap-6">
             <div class="news-card-big">
               <div class="big-img">
                 <img
@@ -1307,17 +1307,17 @@
     <!-- Footer -->
     <footer class="bg-secondary">
       <div class="custom-container">
-        <div class="py-4 flex justify-between items-center">
+        <div class="py-4 lg:flex lg:justify-between lg:items-center">
           <div
-            class="text-white divide-x-4 divide-white flex items-center space-x-5"
+            class="text-white lg:divide-x-4 lg:divide-white lg:flex lg:items-center lg:space-x-5"
           >
-            <p>©2024 SportsRani all right Reserved</p>
-            <p class="pl-5">
+            <p class="text-center text-sm lg:text-base">©2024 SportsRani all right Reserved</p>
+            <p class="hidden lg:block pl-5">
               <a href="">Terms & Condition</a>
             </p>
           </div>
 
-          <div class="text-white flex items-center gap-6">
+          <div class="text-white hidden lg:flex items-center gap-6">
             <p>Follow us</p>
             <ul class="flex items-center gap-5">
               <li>

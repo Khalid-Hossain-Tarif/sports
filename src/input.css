@@ -7,7 +7,7 @@ body {
 }
 
 .custom-container {
-  @apply px-10;
+  @apply px-4 lg:px-10;
 }
 
 .section-heading {
@@ -71,7 +71,7 @@ body {
 
 /*border-btn-block*/
 .border-btn-block {
-    @apply flex gap-6
+    @apply hidden lg:flex gap-6
 }
 
 .border-btn {
