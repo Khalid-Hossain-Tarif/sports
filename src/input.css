@@ -30,6 +30,20 @@ body {
   @apply bg-[#D8DCE3];
 }
 
+/*Custom radio button*/
+.custom-radio-btn + label {
+  @apply flex justify-between items-center py-3 px-4 rounded-xl bg-[#383435] cursor-pointer;
+}
+.custom-radio-btn + label p {
+  @apply text-[#383435] font-bold text-lg;
+}
+.custom-radio-btn + label i {
+  @apply text-white text-[40px];
+}
+.custom-radio-btn:checked + label i {
+  @apply text-primary;
+}
+
 /* slick slider */
 .slick-slide {
   @apply mx-2;
