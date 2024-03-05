@@ -22,6 +22,14 @@ body {
   @apply my-8;
 }
 
+/*Custom radio button*/
+.custom-radio-button + label {
+  @apply block border border-[#D8DCE3] py-3 px-2 w-full text-center text-sm text-black font-medium cursor-pointer capitalize;
+}
+.custom-radio-button:checked + label {
+  @apply bg-[#D8DCE3];
+}
+
 /* slick slider */
 .slick-slide {
   @apply mx-2;
@@ -94,7 +102,7 @@ body {
 }
 
 .accordion .a-container .a-btn .title {
-  @apply text-base lg:text-xl font-semibold
+  @apply text-base lg:text-xl font-semibold;
 }
 
 .accordion .a-container .a-btn .arrow {
@@ -114,5 +122,5 @@ body {
 }
 
 .accordion .a-container.active .a-panel p {
-  @apply pt-1 first:pt-0
+  @apply pt-1 first:pt-0;
 }

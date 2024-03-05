@@ -111,7 +111,7 @@
     <!-- Content -->
     <main>
       <!-- Advertisement -->
-      <section class="px-7 lg:px-0 mt-10 lg:mt-4 mb-10">
+      <section class="px-7 lg:px-0 mt-4 lg:mt-4">
         <div class="custom-container">
           <div
             class="bg-[#E6E2E0] rounded-xl h-[90px] grid place-content-center text-center"
@@ -122,10 +122,133 @@
       </section>
 
       <!-- form -->
-      <section>
+      <section class="my-5">
         <div class="custom-container">
-            <div class="bg-white p-4 rounded-xl"> 
+            <div class="bg-white p-4 lg:py-7 lg:px-10 rounded-xl flex flex-col lg:flex-row lg:justify-between lg:items-center gap-10"> 
+                <div class="lg:w-[70%]">
+                    <div>
+                        <h1 class="text-xl lg:text-2xl font-bold text-[#1B1F23]">My Profile</h1>
+                        <p class="mt-2 text-[13px] text-[#6A737D]">Edit your profile</p>
+                    </div>
 
+                    <div class="my-5 lg:my-10">
+                        <div class="grid lg:grid-cols-2 gap-4 lg:gap-x-10 lg:gap-y-6">
+                            <div>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">First name</p>
+                                <div class="relative">
+                                  <input
+                                    type="text"
+                                    value="Jasan"
+                                    class="relative w-full h-12 pl-4 pr-10 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                                  />
+                                  <div class="absolute right-3 top-1/2 -translate-y-1/2 opacity-90 font-bold">
+                                    <img src="./src/images/global/user-gray.png" alt="user icon" class="w-5 lg:w-auto">
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Last name</p>
+                                <div>
+                                  <input
+                                    type="text"
+                                    value="Ahmed"
+                                    class="relative w-full h-12 p-4 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                                  />
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Username*</p>
+                                <div>
+                                  <input
+                                    type="text"
+                                    placeholder="Enter your username"
+                                    required
+                                    class="relative w-full h-12 p-4 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                                  />
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Email Address</p>
+                                <div>
+                                  <input
+                                    type="email"
+                                    value="jasan@mail.com"
+                                    class="relative w-full h-12 p-4 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                                  />
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Gender</p>
+                                <div class="flex gap-3 lg:gap-7">
+                                  <div class="grow">
+                                    <input
+                                      type="radio"
+                                      name="radio"
+                                      id="radio-one"
+                                      class="hidden custom-radio-button"
+                                    />
+                                    <label for="radio-one">Radio one</label>
+                                  </div>
+                                  <div class="grow">
+                                    <input
+                                      type="radio"
+                                      name="radio"
+                                      id="radio-two"
+                                      class="hidden custom-radio-button"
+                                    />
+                                    <label for="radio-two">Radio two</label>
+                                  </div>
+                                  <div class="grow">
+                                    <input
+                                      type="radio"
+                                      name="radio"
+                                      id="radio-three"
+                                      class="hidden custom-radio-button"
+                                    />
+                                    <label for="radio-three">Radio three</label>
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="mb-2 font-bold text-sm text-textGray capitalize">Date of birth</p>
+                                <div class="relative">
+                                  <input
+                                    type="text"
+                                    placeholder="Date of birth"
+                                    class="relative w-full h-12 pl-4 pr-10 py-1 border border-[#D8DCE3] focus:border-gray/30 outline-none placeholder:text-[#6A737D] text-[#6A737D] text-sm"
+                                  />
+                                  <div class="absolute right-3 top-1/2 -translate-y-1/2 opacity-90 font-bold">
+                                    <img src="./src/images/global/calendar.png" alt="calendar icon" class="w-5 lg:w-auto">
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6 lg:gap-10">
+                                <p class="text-sm lg:text-base text-[#1B1F23] capitalize">Subscribe Newsletter</p>
+                                <div class="flex items-center gap-5">
+                                  <div class="flex items-center gap-1.5">
+                                    <input type="radio" name="radio" id="yes" checked class="accent-black w-4 lg:w-5 h-4 lg:h-5" />
+                                    <label for="yes" class="text-sm text-[#6A737D] capitalize">Yes</label>
+                                  </div>
+                                  <div class="flex items-center gap-1.5">
+                                    <input type="radio" name="radio" id="no" class="accent-black w-4 lg:w-5 h-4 lg:h-5" />
+                                    <label for="no" class="text-sm text-[#6A737D] capitalize">no</label>
+                                  </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-[30%] hidden lg:block">
+                    <img src="./src/images/profile/profile.png" alt="Profile picture" class="m-auto">
+                </div>
             </div>
         </div>
       </section>
