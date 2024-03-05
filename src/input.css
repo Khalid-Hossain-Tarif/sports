@@ -90,11 +90,11 @@ body {
   @apply bg-[#423E3F] rounded-lg;
 }
 .accordion .a-container .a-btn {
-  @apply relative w-full text-white font-medium cursor-pointer transition-all py-4 px-6 flex justify-between items-center;
+  @apply relative w-full text-white font-medium cursor-pointer transition-all py-4 px-4 lg:px-6 flex justify-between items-center;
 }
 
 .accordion .a-container .a-btn .title {
-  @apply text-xl font-semibold
+  @apply text-base lg:text-xl font-semibold
 }
 
 .accordion .a-container .a-btn .arrow {
@@ -102,11 +102,11 @@ body {
 }
 
 .accordion .a-container .a-panel {
-  @apply w-full text-white text-xl transition-all opacity-0 h-auto max-h-0 overflow-hidden px-6;
+  @apply w-full text-white text-[15px] leading-[22px] lg:text-xl transition-all opacity-0 h-auto max-h-0 overflow-hidden px-4 lg:px-6;
 }
 
 .accordion .a-container.active .a-btn .arrow {
-  @apply rotate-[227deg];
+  @apply rotate-[227deg] -mt-0 lg:-mt-2.5;
 }
 
 .accordion .a-container.active .a-panel {
