@@ -21,7 +21,7 @@ module.exports = {
         // review: "#F9AC00",
 
         // heading: "#222836",
-        // body: "#444D56",
+        body: "#f7f8f9",
 
         // borderLight: "#e5e5e5",
         // borderDark: "#2B364A",
