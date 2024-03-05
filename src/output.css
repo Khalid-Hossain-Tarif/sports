@@ -1397,17 +1397,30 @@ body {
 }
 
 .custom-radio-btn + label p {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(56 52 53 / var(--tw-text-opacity));
 }
 
+@media (min-width: 1024px) {
+  .custom-radio-btn + label p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .custom-radio-btn + label i {
-  font-size: 40px;
+  font-size: 34px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  .custom-radio-btn + label i {
+    font-size: 40px;
+  }
 }
 
 .custom-radio-btn:checked + label i {
