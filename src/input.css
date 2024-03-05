@@ -45,7 +45,7 @@ body {
 }
 
 /* slick slider */
-.slick-slide {
+.banner-slider .slick-slide {
   @apply mx-2;
 }
 
@@ -137,4 +137,20 @@ body {
 
 .accordion .a-container.active .a-panel p {
   @apply pt-1 first:pt-0;
+}
+
+/* Image carousel  */
+.image-carousel .slick-slide {
+  @apply mr-6
+}
+.image-carousel .slick-next:before,
+.image-carousel .slick-prev:before {
+  @apply text-[#383435] text-[28px] lg:text-[32px]
+}
+.image-carousel .slick-next,
+.image-carousel .slick-prev {
+  @apply -top-9 right-0 left-auto
+}
+.image-carousel .slick-prev {
+  @apply right-10
 }
