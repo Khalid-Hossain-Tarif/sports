@@ -6,6 +6,10 @@ body {
   @apply overflow-x-hidden font-primary;
 }
 
+main {
+  @apply min-h-screen
+}
+
 .custom-container {
   @apply px-4 lg:px-10 overflow-x-hidden;
 }
