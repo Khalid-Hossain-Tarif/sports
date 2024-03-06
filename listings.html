@@ -22,90 +22,90 @@
   <body class="bg-body">
     <!-- Header -->
     <header class="bg-secondary">
+      <div class="custom-container">
+        <nav class="py-4 flex justify-between items-center gap-3">
+          <ul>
+            <li>
+              <a href="/">
+                <img
+                  src="./src/images/header/logo.png"
+                  alt="sports rani logo"
+                  class="w-[168px] lg:w-auto"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <ul class="hidden lg:flex items-center gap-16">
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="listings.html"
+                >Tips & Predictions</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="profile.html"
+                >Cricket</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white hover:text-primary text-lg font-semibold"
+                href="profile.html"
+                >Football</a
+              >
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <a
+                href="login.html"
+                class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
+              >
+                <span class="font-semibold text-[15px] lg:text-base"
+                  >Sign in</span
+                >
+                <img
+                  src="./src/images/header/user.png"
+                  alt="user icon"
+                  class="w-5 lg:w-auto"
+                />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Only mobile device section -->
+      <div class="lg:hidden bg-[#2C2C2C] py-4">
         <div class="custom-container">
-          <nav class="py-4 flex justify-between items-center gap-3">
-            <ul>
-              <li>
-                <a href="/">
-                  <img
-                    src="./src/images/header/logo.png"
-                    alt="sports rani logo"
-                    class="w-[168px] lg:w-auto"
-                  />
-                </a>
+          <div class="flex items-center gap-7">
+            <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
+              <img src="./src/images/global/trending-up.png" alt="trending icon">
+            </div>
+            <ul class="flex items-center gap-6">
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <span class="text-xs text-white">All Cricket Scores</span>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
+                <span class="text-xs text-white">All Football Scores</span>
               </li>
             </ul>
-  
-            <ul class="hidden lg:flex items-center gap-16">
-              <li>
-                <a
-                  class="text-white hover:text-primary text-lg font-semibold"
-                  href="/"
-                  >Home</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-white hover:text-primary text-lg font-semibold"
-                  href="/"
-                  >Tips & Predictions</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-white hover:text-primary text-lg font-semibold"
-                  href="/"
-                  >Cricket</a
-                >
-              </li>
-              <li>
-                <a
-                  class="text-white hover:text-primary text-lg font-semibold"
-                  href="/"
-                  >Football</a
-                >
-              </li>
-            </ul>
-  
-            <ul>
-              <li>
-                <a
-                  href="#"
-                  class="flex items-center gap-2.5 py-2 lg:py-3 px-4 lg:px-6 rounded-[20px] bg-primary"
-                >
-                  <span class="font-semibold text-[15px] lg:text-base"
-                    >Sign in</span
-                  >
-                  <img
-                    src="./src/images/header/user.png"
-                    alt="user icon"
-                    class="w-5 lg:w-auto"
-                  />
-                </a>
-              </li>
-            </ul>
-          </nav>
         </div>
-  
-        <!-- Only mobile device section -->
-        <div class="lg:hidden bg-[#2C2C2C] py-4">
-          <div class="custom-container">
-            <div class="flex items-center gap-7">
-              <div class="w-7 h-7 bg-[#423E3F] rounded-full grid place-content-center">
-                <img src="./src/images/global/trending-up.png" alt="trending icon">
-              </div>
-              <ul class="flex items-center gap-6">
-                <li class="flex items-center gap-1.5">
-                  <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
-                  <span class="text-xs text-white">All Cricket Scores</span>
-                </li>
-                <li class="flex items-center gap-1.5">
-                  <i class="fa-regular fa-circle text-primary text-[6px] bg-primary rounded-full"></i>
-                  <span class="text-xs text-white">All Football Scores</span>
-                </li>
-              </ul>
-          </div>
-        </div>
+      </div>
     </header>
 
     <!-- Content -->

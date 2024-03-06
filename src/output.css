@@ -763,6 +763,14 @@ video {
   width: 100%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .min-w-\[137px\] {
   min-width: 137px;
 }
@@ -1954,6 +1962,14 @@ main {
 
   .lg\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .lg\:w-12 {
+    width: 3rem;
+  }
+
+  .lg\:w-14 {
+    width: 3.5rem;
   }
 
   .lg\:min-w-\[394px\] {
