@@ -49,6 +49,13 @@ main {
 }
 
 /* slick slider */
+.banner-slider {
+  @apply overflow-x-auto whitespace-nowrap flex gap-5 cursor-grab;
+}
+
+.slider-item {
+  @apply snap-center snap-always shrink-0;
+}
 .banner-slider .slick-slide {
   @apply mx-2;
 }

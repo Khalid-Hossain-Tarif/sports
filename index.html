@@ -128,9 +128,9 @@
               <option value="kabaddi">Kabaddi</option>
             </select>
           </div>
-          <div class="banner-slider">
+          <div class="banner-slider" id="scrollport">
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -180,7 +180,7 @@
             </div>
 
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -230,7 +230,7 @@
             </div>
 
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -280,7 +280,7 @@
             </div>
 
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -330,7 +330,7 @@
             </div>
 
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -380,7 +380,7 @@
             </div>
 
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -430,7 +430,7 @@
             </div>
 
             <!-- slider item -->
-            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl">
+            <div class="min-w-[276px] lg:min-w-[394px] py-3 lg:py-5 px-4 lg:px-6 bg-secondary rounded-xl slider-item">
               <div class="flex justify-between items-start gap-2">
                 <div>
                   <h4 class="text-[10px] lg:text-[15px] leading-[18px] font-bold text-white">
@@ -1445,8 +1445,38 @@
 
     <!-- scripts -->
     <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./src/slider.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+    <!-- <script src="./src/slider.js"></script> -->
+
+    <script>
+      // JavaScript for mouse dragging functionality
+      const scrollport = document.getElementById('scrollport');
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+    
+      scrollport.addEventListener('mousedown', (e) => {
+        isDown = true;
+        startX = e.pageX - scrollport.offsetLeft;
+        scrollLeft = scrollport.scrollLeft;
+      });
+    
+      scrollport.addEventListener('mouseleave', () => {
+        isDown = false;
+      });
+    
+      scrollport.addEventListener('mouseup', () => {
+        isDown = false;
+      });
+    
+      scrollport.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - scrollport.offsetLeft;
+        const walk = (x - startX) * 2; // Adjust scrolling speed here
+        scrollport.scrollLeft = scrollLeft - walk;
+      });
+    </script>
   </body>
 </html>
