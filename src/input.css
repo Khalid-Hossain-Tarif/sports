@@ -82,7 +82,11 @@ main {
 }
 
 .news-card-small {
-  @apply bg-secondary rounded-xl flex justify-between items-center lg:items-stretch lg:gap-3 px-4 py-3;
+  @apply bg-secondary rounded-xl flex items-center lg:items-stretch lg:gap-3 px-4 py-3;
+}
+
+.news-card-small-content {
+  @apply grow
 }
 
 .news-card-small .small-img {
@@ -98,7 +102,7 @@ main {
 }
 
 .news-card-small .news-tag {
-  @apply text-base text-white;
+  @apply text-sm lg:text-base text-white;
 }
 
 .mobile-big-img {
@@ -174,4 +178,13 @@ main {
 
 .news-content img {
   @apply rounded-xl
+}
+
+/* Video Modal */
+::backdrop {
+  @apply bg-secondary/95
+}
+
+.video-modal iframe {
+  @apply h-[300px] lg:h-[500px]
 }
