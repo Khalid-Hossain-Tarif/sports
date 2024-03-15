@@ -78,19 +78,19 @@ main {
 }
 
 .news-tag {
-  @apply text-xl text-white;
+  @apply text-base 2xl:text-xl text-white;
 }
 
 .news-card-small {
-  @apply bg-secondary rounded-xl flex items-center lg:items-stretch lg:gap-3 px-4 py-3;
+  @apply bg-secondary rounded-xl flex items-center lg:items-stretch 2xl:gap-3 px-4 py-3;
 }
 
 .news-card-small-content {
-  @apply grow
+  @apply grow flex flex-col justify-between
 }
 
 .news-card-small .small-img {
-  @apply w-[94px] lg:w-[193px] h-[100px] lg:h-[128px] shrink-0;
+  @apply w-[94px] lg:w-[100px] 2xl:w-[193px] h-[96px] lg:h-auto shrink-0;
 }
 
 .news-card-small .small-img img {
@@ -98,7 +98,7 @@ main {
 }
 
 .news-small-heading {
-  @apply mb-3 lg:mb-5 text-[15px] lg:text-xl font-medium text-primary;
+  @apply mb-3 text-[15px] 2xl:text-xl font-medium text-primary;
 }
 
 .news-card-small .news-tag {
