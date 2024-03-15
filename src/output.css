@@ -691,6 +691,10 @@ video {
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1135,11 +1139,6 @@ video {
 
 .bg-primary\/25 {
   background-color: rgb(248 255 41 / 0.25);
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-secondary {
@@ -1996,6 +1995,10 @@ main {
   .video-modal dialog iframe {
     height: 500px;
   }
+}
+
+.video-modal dialog {
+  position: fixed;
 }
 
 .placeholder\:text-\[\#6A737D\]::-moz-placeholder {

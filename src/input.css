@@ -188,3 +188,7 @@ main {
 .video-modal dialog iframe {
   @apply h-[300px] lg:h-[500px]
 }
+
+.video-modal dialog {
+  @apply fixed
+}
