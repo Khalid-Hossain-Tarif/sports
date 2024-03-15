@@ -185,6 +185,6 @@ main {
   @apply bg-secondary/95
 }
 
-.video-modal iframe {
+.video-modal dialog iframe {
   @apply h-[300px] lg:h-[500px]
 }
