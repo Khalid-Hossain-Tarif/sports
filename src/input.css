@@ -26,6 +26,36 @@ main {
   @apply my-8;
 }
 
+/* Menus */
+.primary-menu li a {
+  @apply relative mx-8;
+}
+
+.primary-menu li a.active_color {
+  @apply text-primary;
+}
+
+.primary-menu li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+  height: 3px;
+  width: 0;
+  background-color: transparent;
+  z-index: 999;
+  transition: all .3s;
+}
+
+.primary-menu li a:hover::before {
+  background-color: #F8FF29;
+  width: 100%;
+}
+
+.primary-menu li a.active_color::before {
+  @apply bg-primary;
+}
+
 /*Custom radio button*/
 .custom-radio-button + label {
   @apply block border border-[#D8DCE3] py-3 px-2 w-full text-center text-sm text-black font-medium cursor-pointer capitalize;

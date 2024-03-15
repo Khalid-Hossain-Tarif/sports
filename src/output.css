@@ -544,6 +544,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .fixed {
   position: fixed;
 }
@@ -580,8 +584,36 @@ video {
   top: 50%;
 }
 
+.bottom-\[-40px\] {
+  bottom: -40px;
+}
+
+.bottom-\[-80px\] {
+  bottom: -80px;
+}
+
+.left-5 {
+  left: 1.25rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.left-1\/2 {
+  left: 50%;
+}
+
 .z-50 {
   z-index: 50;
+}
+
+.z-\[999\] {
+  z-index: 999;
 }
 
 .col-span-2 {
@@ -689,6 +721,14 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-1\.5 {
+  margin-top: 0.375rem;
+}
+
+.block {
+  display: block;
 }
 
 .inline-block {
@@ -823,6 +863,11 @@ video {
   width: 100%;
 }
 
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .min-w-\[137px\] {
   min-width: 137px;
 }
@@ -841,6 +886,11 @@ video {
 
 .-translate-y-1\/2 {
   --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -972,6 +1022,10 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+}
+
+.\!overflow-visible {
+  overflow: visible !important;
 }
 
 .rounded {
@@ -1462,6 +1516,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(57 53 54 / var(--tw-text-opacity));
+}
+
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(73 69 73 / var(--tw-text-opacity));
+}
+
 .accent-black {
   accent-color: #000;
 }
@@ -1470,9 +1534,19 @@ video {
   opacity: 0.9;
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .shadow-\[0px_13px_37px_0px_\#00000036\] {
   --tw-shadow: 0px 13px 37px 0px #00000036;
   --tw-shadow-colored: 0px 13px 37px 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-lg {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1488,6 +1562,12 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 body {
@@ -1535,6 +1615,41 @@ main {
 .section-margin {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/* Menus */
+
+.primary-menu li a {
+  position: relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.primary-menu li a.active_color {
+  --tw-text-opacity: 1;
+  color: rgb(248 255 41 / var(--tw-text-opacity));
+}
+
+.primary-menu li a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -29px;
+  height: 3px;
+  width: 0;
+  background-color: transparent;
+  z-index: 999;
+  transition: all .3s;
+}
+
+.primary-menu li a:hover::before {
+  background-color: #F8FF29;
+  width: 100%;
+}
+
+.primary-menu li a.active_color::before {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 255 41 / var(--tw-bg-opacity));
 }
 
 /*Custom radio button*/
@@ -2019,6 +2134,10 @@ main {
   color: rgb(106 115 125 / var(--tw-text-opacity));
 }
 
+.hover\:visible:hover {
+  visibility: visible;
+}
+
 .hover\:text-blue-600:hover {
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
@@ -2029,8 +2148,25 @@ main {
   color: rgb(248 255 41 / var(--tw-text-opacity));
 }
 
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
 .focus\:border-gray\/30:focus {
   border-color: rgb(73 69 73 / 0.3);
+}
+
+.group:hover .group-hover\:visible {
+  visibility: visible;
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 @media (min-width: 1024px) {
